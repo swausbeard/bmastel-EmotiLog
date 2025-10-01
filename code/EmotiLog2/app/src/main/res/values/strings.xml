@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">EmotiLog</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Emojis</string>
+    <string name="second_fragment_label">Summary</string>
+    <string name="happy">😁</string>
+    <string name="previous">Previous</string>
+    <string name="sad">😞</string>
+    <string name="angry">😡</string>
+    <string name="sick">🤒</string>
+    <string name="scared">😱</string>
+    <string name="mischievous">😈</string>
+    <string name="summary">View Summary</string>
+    <string name="happy_count">%d</string>
+    <string name="sad_count">%d</string>
+    <string name="angry_count">%d</string>
+    <string name="sick_count">%d</string>
+    <string name="scared_count">%d</string>
+    <string name="mischievous_count">%d</string>
+</resources>

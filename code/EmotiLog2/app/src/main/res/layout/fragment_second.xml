@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:text="You have felt:"
+            android:textAlignment="center"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toTopOf="@+id/happy_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/happy_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="32dp"
+            android:text="Happy:"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/sad_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header" />
+
+        <TextView
+            android:id="@+id/happy_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="-20dp"
+            android:text="@string/happy_count"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/happy_text"
+            app:layout_constraintTop_toBottomOf="@+id/header" />
+
+        <TextView
+            android:id="@+id/sad_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="32dp"
+            android:text="Sad:"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/angry_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/happy_text" />
+
+        <TextView
+            android:id="@+id/sad_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="-20dp"
+            android:text="@string/sad_count"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sad_text"
+            app:layout_constraintTop_toBottomOf="@+id/happy_count" />
+
+        <TextView
+            android:id="@+id/angry_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="32dp"
+            android:text="Angry:"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/sick_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sad_text" />
+
+        <TextView
+            android:id="@+id/sick_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="32dp"
+            android:text="Sick:"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/scared_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/angry_text" />
+
+        <TextView
+            android:id="@+id/scared_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="32dp"
+            android:text="Scared:"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/mischievous_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sick_text" />
+
+        <TextView
+            android:id="@+id/mischievous_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="32dp"
+            android:text="Mischievous:"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scared_text" />
+
+        <TextView
+            android:id="@+id/angry_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="-20dp"
+            android:text="@string/angry_count"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/angry_text"
+            app:layout_constraintTop_toBottomOf="@+id/sad_count" />
+
+        <TextView
+            android:id="@+id/sick_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="-20dp"
+            android:text="@string/sick_count"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sick_text"
+            app:layout_constraintTop_toBottomOf="@+id/angry_count" />
+
+        <TextView
+            android:id="@+id/scared_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="-10dp"
+            android:text="@string/scared_count"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/scared_text"
+            app:layout_constraintTop_toBottomOf="@+id/sick_count" />
+
+        <TextView
+            android:id="@+id/mischievous_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-60dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/mischievous_count"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mischievous_text"
+            app:layout_constraintTop_toBottomOf="@+id/scared_count" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
